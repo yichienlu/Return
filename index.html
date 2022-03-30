@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="image/icon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歸 Return | 咖啡、餐食</title>
+    <!-- bootstrap起手式 (jQuery需在Bootstrap bundle前面)-->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- bootstrap起手式 -->
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+            position: relative;
+            font-family: Microsoft JhengHei;
+        }
+
+        body {
+            background-image: url("image/background01.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .main-bgimg {
+            background-color: #fff;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, .15);
+            border-radius: 5px;
+        }
+
+        .main_margin {
+            margin-top: 300px;
+            margin-bottom: 300px;
+        }
+
+        .no_padding {
+            padding: 0px;
+        }
+
+        nav {
+            border-radius: 0px 0px 5px 5px;
+        }
+
+        .carousel-indicators li {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0px 10px;
+        }
+
+        .chefpic {
+            background-image: url("image/chef01.jpg");
+            background-size: cover;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+
+        h1 {
+            color: #CA7;
+            font-weight: bold;
+        }
+
+        h3 {
+            background-color: #CA7;
+            /* font-weight: bold; */
+            color: #fff;
+        }
+
+
+        @media screen and (min-width:992px) {
+            .menuimg {
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .packimg {
+                height: 200px;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        @media screen and (min-width:576px) and (max-width:991px) {
+            .menuimg {
+                height: 300px;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .packimg {
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        @media screen and (max-width:575px) {
+
+            .packimg,
+            .menuimg {
+                height: 200px;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container-fluid no_padding h-100 w-100 ">
+    </header>
+    <main class="container no_padding ">
+        <nav class="navbar navbar-expand-sm navbar-light bg-white sticky-top shadow">
+            <a class="navbar-brand" href="#" style="padding: 0px;">
+                <img src="image/Nav-Logo.png" style="height: 2rem;">
+                <small> 咖啡、餐食</small>
+            </a>
+            <!-- <span class="navbar-text">咖啡、餐食</span> -->
+            <!--三橫線按鈕-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--中斷點群組和隱藏導覽列內容-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--導覽列開始-->
+                <ul class="navbar-nav w-100 d-flex justify-content-around">
+                    <!--active表示當前的頁面-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#a1">關於歸Return</a>
+                    </li>
+                    </li>
+                    <ul class="list-unstyled">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown">
+                                菜單
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#a2-1">主餐</a>
+                                <a class="dropdown-item" href="#a2-2">單點飲料</a>
+                                <a class="dropdown-item" href="#a2-3">飲料</a>
+                                <a class="dropdown-item" href="#a2-4">單點</a>
+                                <a class="dropdown-item" href="#a2-5">點心</a>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#a3">冷凍調理包</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#a4">聯絡我們</a>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid main-bgimg main_margin mt-0 pt-5">
+
+            <!-- <p>&nbsp;</p> -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/carousel01.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/carousel02.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/carousel03.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/carousel04.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/carousel05.jpg" class="d-block w-100">
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <p id="a1">&nbsp;</p>
+            <p>&nbsp;</p>
+            <div>
+                <h1>關於歸Return</h1>
+            </div>
+
+            <div class="row text-center">
+                <div class="col d-none d-lg-block"></div>
+                <div class="col-12 col-md-5 col-lg-4">
+                    <div class="chefpic">
+                    </div>
+                    <div>
+                        <h5><strong>主廚阿龜</strong></h5>
+                        <p>喜歡吃也喜歡做菜<br>
+                            喜歡旅行,自從第一次出國自助旅行之後就成癮<br>
+                            曾旅居荷蘭一年,並在歐洲各國自助旅行(ㄌㄧㄡˊ ㄌㄤˋ) <br>
+                            身為廚師與冒險者,喜歡嘗試各地特色的料理<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 col-lg-6">
+                    <p></p>
+                    <p><strong>『Return』 旅人系列-推出各國特色食物,讓大家有新鲜的味蕾體驗</strong></p>
+                    <p>離開家久了,自然想起台灣味<br>
+                        雖然各國不同的菜很有趣也很好吃,但畢竟不是家的味道<br>
+                        所以經常在荷蘭做台灣菜分享給大家吃</p>
+                    <p><strong>『歸』歸人系列-推出台灣菜或是熟悉的中式菜色,畢竟這是無可替代的</strong></p>
+                    <p>歸這個名字是希望能回到純真、簡單<br>
+                        食材盡量以當季及在地食材為主<br>
+                        在這裡就跟回到家一樣,可以用很輕鬆的心情吃、喝<br>
+                        <br>
+                        吃吃喝喝,本來就是很快樂的事!
+                    </p>
+                </div>
+                <div class="col d-none d-lg-block"></div>
+            </div>
+            <p>&nbsp;</p>
+        </div>
+
+        <div class="container-fluid  main-bgimg main_margin">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <h1>菜單</h1>
+            <div class="row">
+                <div class="col-12 order-1">
+                    <p id="a2-1" style="line-height: 2.5rem;">&nbsp;</p>
+                    <h3>主餐</h3>
+                </div>
+                <div class="col-12 col-lg-4 order-2 order-lg-4">
+                    <div class="menuimg" style="background-image: url('image/menu01.jpg');"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 order-3 order-lg-2">
+                    <h4>旅人系列</h4>
+                    <p><b>愛爾蘭黑啤酒燉肉 Irish Stew</b> <i>$200</i><br>
+                        <small>以大量蔬菜為基底，加入愛爾蘭 Guinness 黑啤酒將肉燉至入口即化是愛爾蘭最著名的菜餚之一</small>
+                    </p>
+                    <p><b>俄羅斯酸奶牛肉 Beef Stroganoff</b> <i>$260</i><br>
+                        <small>起源於 19 世紀中期的俄羅斯一路流傳至中國、香港、美國裡面添加的食材與調味因地制宜唯一不 變的是他的靈魂，芥末與酸奶油帶出厚重卻不膩口的滋味
+                            (採用choice等級牛肉品質不馬虎)</small>
+                    </p>
+                    <p><b>印尼仁當雞肉 Chicken Rendang</b> 小辣 <i>$220</i><br>
+                        <small>來自蘇門達臘地區 Minangkabau
+                            族的傳統食物，通常在特殊節日準備豐富的香料、椰奶、雞肉經長時間慢火燉煮，2011年Rendang經超過35000名網友於CNN網路票選為全球最佳料理</small>
+                    </p>
+                    <p><b>泰式打拋肉絲</b> 中辣 <i>$220</i> <br>
+                        <small>來自泰國的打拋醬，配上台灣國產豬肉絲，香辣夠味</small>
+
+                    </p>
+                    <p><b>傲嬌雞腿 Chicken with Green Sichuan Pepper Sauce</b> <i>$240</i><br>
+                        <small>青花椒獨有的檸檬香氣與大紅地花椒有所差異，清新麻香，必須試試</small>
+
+                    </p>
+                    <p><b>翼板牛排 6oz~8oz Chuck Flap</b> <i>$依重量</i><br>
+                        <small>採用choice等級的美國牛肉，鮮嫩多汁</small>
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 order-4 order-lg-3">
+                    <h4>歸人系列</h4>
+                    <p><b>照燒豬排</b> <i>$180</i><br>
+                        <small>與眾不同，豬排選用梅花肉吃起來較里肌肉更嫩，經過醃製後以照燒方式烹調，鹹中帶甜是小朋友的最愛。</small>
+
+                    </p>
+                    <p><b>香煎雞腿排</b> <i>$220</i><br>
+                        <small>乾煎去骨雞腿排，軟嫩多汁，平凡中的不平凡</small>
+                        。
+                    </p>
+                    <p><b>香煎鯖魚</b> <i>$220</i><br>
+                        <small>來自台灣南方澳的鯖魚，不像挪威鯖魚經過油漬，適中的油脂含量不會對健康造成負擔，含有豐富的鈣質跟蛋白質及不飽和脂肪酸
+                            Omega-3、DHA、EPA</small>
+                    </p>
+
+                    <h4>素食</h4>
+                    <p><b>菇菇與他的快樂夥伴們</b> <i>$200</i><br>
+                        <small>菇類含有肌苷酸、鳥苷酸等成分，是天然的味精，綜合菇類的鮮與麻油的香，任誰都擋不住</small>
+                    </p>
+                    <p><b>薑燒豆包</b> <i>$200</i><br>
+                        <small>吃素也能很有味道，豆包有豐富蛋白質，營養均衡</small>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 order-1">
+                    <p id="a2-2" style="line-height: 2.5rem;">&nbsp;</p>
+                    <h3>單點飲料</h3>
+                </div>
+                <div class="col-12 col-lg-4 order-2">
+                    <div class="menuimg" style="background-image: url('image/menu02.jpg');"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 order-3">
+                    <h4>咖啡</h4>
+                    <p><b>濃縮咖啡 Espresso</b> 熱 <i>$60</i><br>
+                        <small>經典義式濃縮咖啡</small>
+
+                    </p>
+                    <p><b>美式咖啡 Americano</b> 冰/熱 <i>$80/$60</i><br>
+                        <small>覺得 Espresso 太熱情? 試試美式吧</small>
+                    </p>
+                    <p><b>拿鐵 Cafe Latte</b> 冰/熱 <i>$110/$80</i><br>
+                        <small>Espresso 與牛奶的完美結合</small>
+                    </p>
+                    <p><b>冰磚拿鐵 Iced Espresso Latte</b> <i>$120</i><br>
+                        <small>雖然跟一般的Cafe Latte一樣都是由新鮮咖啡與牛奶組成，作法不同，喝起來的味道也不一樣喔</small>
+                        ！
+                    </p>
+                    <p><b>焦糖 or 香草拿鐵 Caramel or Vanilla Cafe Latte</b> 冰/熱 <i>$120/$100</i><br>
+                        <small>想來點有調味的拿鐵，經典焦糖/香草口味是不會退流行的</small>
+                    </p>
+                    <p><b>Espresso Sprite/Tonic</b> 冰 <i>$110</i><br>
+                        <small>歐洲正流行的搭法，清爽帶勁，Sprite 的甜味與香氣把 Espresso帶到另一個層次</small>
+                    </p>
+                    <p><b>手沖單品 Filter Coffee</b> <i>$??</i> <br>
+                        <small>不定期更換單品咖啡，請詢問阿龜今天店裡有什麼豆子</small>
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 order-4">
+                    <h4>氣泡飲</h4>
+                    <p><b>接骨木花氣泡飲 Elderflower Soda</b> 冰 <i>$110</i> <br>
+                        <small>接骨木花是歐洲常見的花，也是歐洲人自古以來常用的保健品，可以舒缓镇静，清爽無負擔</small>
+                    </p>
+                    <p><b>Lemon Tonic</b> 冰 <i>$90</i> <br>
+                        <small>通寧水有奎寧特殊的香味，加入檸檬汁，酸甜中帶著微微的苦，很深邃的味道</small>
+                    </p>
+                    <p><b>Mojito (無酒精 Alcohol free)</b> 冰 <i>$120</i> <br>
+                        <small>古巴經典調酒，清爽薄荷與檸檬的結合，去除掉蘭姆酒</small>
+                    </p>
+                    <p><b>亞得里亞海 Adriatic Sea</b> 冰 <i>$110</i> <br>
+                        <small>亞得里亞海的水，藍到一眼望穿，地中海柑橘水果元素氣泡飲</small>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 order-1">
+                    <p id="a2-3" style="line-height: 2.5rem;">&nbsp;</p>
+                    <h3>飲料</h3>
+                </div>
+                <div class="col-12 col-lg-4 order-2 order-lg-4">
+                    <div class="menuimg" style="background-image: url('image/menu03.jpg');"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 order-3 order-lg-2">
+                    <h4>茶</h4>
+                    <p><b>鮮奶茶 Tea Latte</b> 冰/熱 <i>$120/$100</i> <br>
+                        <small>紅茶加入純鮮奶，健康的好選擇，可加點焦糖/香單糖漿+$20</small>
+                    </p>
+                    <p><b>馬鞭草薄荷茶 Mint Tea</b> 熱 <i>$80</i> <br>
+                        <small>經典組合，無咖啡因，在歐洲是十分暢銷的飲品</small>
+                    </p>
+                    <p><b>唐寧英式伯爵茶 TWININGS Earl Grey</b> 冰/熱 <i>$90/$80</i>
+                        <br>
+                        <small>TIVININGS，英國最古老的茶，1717年，唐寧先生開設了紅茶專門店—「黃金獅子」，獲了維多利亞女皇、喬治五世、愛德華七世、亞歷山大皇太后等王室的青睞，成皇室貴族的御用專門店。伯爵茶是一款非常經典的混合茶，清爽的口感，融合了數種上等茶葉，並添加了地中海風味淡淡的佛手柑芬芳</small>
+
+                    </p>
+                    <p><b>Stassen 有機大吉嶺紅茶 Organic Darjeeling Tea</b> 冰/熱 <i>$100/$80</i> <br>
+                        <small>Stassen，世界上第一家以有機栽培自然方式生產製造的茶廠，完全不用人工化學肥料和農藥，經瑞士IMO有機認證及取得農糧署核發有機證明文件。
+                            採擷自海拔2000公尺的喜馬拉雅山麓野生動物保護區旁的大吉嶺有機茶園，茶湯呈現晶瑩琥珀色澤，有著「東方美人茶」般幽雅清香，是世界三大高山紅茶之一，亦享有「紅茶中的香檳」美譽</small>
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 order-4 order-lg-3">
+                    <h4>其他</h4>
+                    <p><b>可可鮮奶 Chocolate Milk </b>冰/熱 <i>$110/$90</i><br>
+                        <small>還有什麼比這更適合用來撫慰疲憊的心靈?</small>
+                    </p>
+                    <p><b>焦糖鮮奶 Caramel Milk</b> 冰/熱 <i>$120/$100</i><br>
+                        <small>鮮奶不只可以跟咖啡或可可作伙，跟焦糖也是很搭</small>
+                    </p>
+                    <p><b>果汁</b> 冰 <i>$80</i><br>
+                        <small>100%的果汁，不含咖啡因，不額外加糖，健康好選擇</small>
+                    </p>
+                    <p><b>問阿龜</b> <i>$??</i><br>
+                        <small>不定期有特調，請詢問阿龜</small>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 order-1" id="a2-4">
+                    <p id="a2-5" style="line-height: 2.5rem;">&nbsp;</p>
+                </div>
+                <div class="col-12 col-lg-4 order-4 order-lg-2">
+                    <div class="menuimg" style="background-image: url('image/menu04.jpg');"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 order-2 order-lg-3">
+                    <h3>單點</h3>
+                    <p><b>泰式酸辣海鮮湯</b> <i>$180</i> <br>
+                        <small>來自泰國酸酸辣辣的好味道，裡面有大隻又Q彈的白蝦跟新鮮中卷</small>
+                    </p>
+                    <p><b>白灼海鮮佐泰式海鮮醬</b> <i>$150</i><br>
+                        <small>清燙新鮮中卷及2隻大白蝦佐泰式海鮮醬</small>
+                    </p>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 order-3 order-lg-4">
+                    <h3>點心</h3>
+                    <p><b>香脆穀片優格 Granola Yogurt</b> <i>$70</i> <br>
+                        <small>Granola
+                            保留了穀物原本的外型，也留下許多營養，除此之外更添加堅果、果乾等天然食物，最後以蜂蜜烘烤，配上優格，是無敵健康美味又有飽足感的點心。</small>
+                    </p>
+
+                    <p><b>荷蘭焦糖煎餅 Stroop Waffle</b> 2片 <i>$50</i><br>
+                        <small>荷蘭最有名的點心焦糖煎饼來阿，也有人叫他杯蓋餅，放在熱飲的杯口讓餅軟化，香甜酥軟的口感配上黑咖啡或是熱茶根本絕配!</small>
+                    </p>
+
+                    <p><b>阿芙加朵 Affogato</b> <i>$90</i><br>
+                        <small>義大利經典，濃縮咖啡遇到香濃冰淇淋，一發不可收拾</small>
+                    </p>
+
+                    <p><b>問阿龜</b> <i>$??</i><br>
+                        <small>不定時會有限量供應的點心喔!</small>
+                    </p>
+                </div>
+            </div>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div>
+
+        <div class="container-fluid main-bgimg main_margin">
+            <p id="a3">&nbsp;</p>
+            <p>&nbsp;</p>
+            <h1>冷凍調理包</h1>
+            <p>加熱即食超方便(每包一人份) <br>
+                訂購方式：
+                可透過LINE或私訊粉絲頁訂購，冷凍宅配費用另計，訂購滿3000元免運費
+            </p>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 order-2 order-sm-1 order-lg-1">
+                    <h4>異國風味</h4>
+                    <p>義式番茄肉醬(台灣豬肉) <i>$100</i></p>
+                    <p>印尼仁當雞肉(台灣雞腿) <i>$120</i></p>
+                    <p>俄羅斯酸奶牛肉(美國或澳洲牛腱心) <i>$160</i></p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 order-3 order-sm-3 order-lg-2">
+                    <h4>在地口味</h4>
+                    <p>蜂蜜檸檬雞腿排(台灣雞肉) <i>$120</i></p>
+                    <p>傲嬌雞腿(青花椒風味(台灣雞肉) <i>$120</i></p>
+                    <p>三杯雞(台灣雞腿) <i>$140</i></p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 order-4 order-sm-5 order-lg-3">
+                    <h4>湯菜系列</h4>
+                    <p>水煮牛肉(美國或澳洲牛) <i>$160</i></p>
+                    <p>剝皮辣椒雞湯(台灣仿土雞) <i>$170</i></p>
+                    <p>川式清燉牛肉(美國或澳洲牛，不辣) <i>$160</i></p>
+                </div>
+                <div class="d-none d-sm-block col-sm-6 col-lg-4 order-1 order-sm-2 order-lg-4">
+                    <div class="packimg" style="background-image: url('image/pack01.jpg');"></div>
+                </div>
+                <div class="d-none d-sm-block col-sm-6 col-lg-4 order-sm-4 order-lg-5">
+                    <div class="packimg" style="background-image: url('image/pack02.jpg');"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 order-sm-6 order-lg-6">
+                    <div class="packimg" style="background-image: url('image/pack03.jpg');"></div>
+                </div>
+            </div>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div>
+
+        <div class="container-fluid main-bgimg main_margin mb-0">
+            <p id="a4">&nbsp;</p>
+            <p>&nbsp;</p>
+            <h1>聯絡我們</h1>
+            <div class="row">
+                <div class="col-12  col-lg-4">
+                    <div>
+                        <img src="image/BG.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div>
+                        <p>FB: <a
+                                href="https://www.facebook.com/%E6%AD%B8-Return-%E5%92%96%E5%95%A1%E9%A4%90%E9%A3%9F-153549165224698"
+                                target="blank">歸 Return-咖啡、餐食</a> <br>
+                            LineID:
+                            <a href="https://line.me/R/ti/p/x5zxR98neO">@dnh6937J</a>
+                        </p>
+                        <p>電話：<a href="tel:033350663">03-3350663</a><br>
+                            地址：<a href="https://goo.gl/maps/RjpTAnZsdbTeXoW28">桃園市桃園區中山北路198號</a>
+                        </p>
+
+                        <p>停車資訊：<br>西門公有停車場距本店步行約5分鐘 </p>
+                        <p> 交通方式：<br>1路公車於育樂街口下車步行約8分鐘</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.0914291060185!2d121.30087601419312!3d24.997009045929076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681f03fc8dd111%3A0x5a691e22c8341aa6!2z5q24IFJldHVybiAtIOWSluWVoeOAgemkkOmjnw!5e0!3m2!1szh-TW!2stw!4v1623487200670!5m2!1szh-TW!2stw"
+                        width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <!-- <div class="col d-none d-md-block"></div> -->
+            </div>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div>
+    </main>
+
+    <footer class="container-fluid no_padding h-100 w-100 position-relative">
+        <div style="height:90%"></div>
+        <div class="text-center">
+            <p>歸 Return &copy; 2021 all rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
